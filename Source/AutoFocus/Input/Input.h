@@ -21,6 +21,9 @@ public:
 
 	UPROPERTY(EditDefaultsOnly)
 	TObjectPtr<UInputAction>			PawnRotation;
+
+	UPROPERTY(EditAnywhere)
+	TObjectPtr<UInputAction>			ActionZoom;
 };
 
 

@@ -17,4 +17,11 @@ UInput::UInput()
 	{
 		PawnRotation = CameraRotation.Object;
 	}
+
+	static ConstructorHelpers::FObjectFinder<UInputAction> Zoom(TEXT("/Script/EnhancedInput.InputAction'/Game/IA/IA_Zoom.IA_Zoom'"));
+
+	if (Zoom.Succeeded())
+	{
+		ActionZoom = Zoom.Object;
+	}
 }
