@@ -43,10 +43,7 @@ void AAutoFocusPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	{
 		const UInput* InputCDO = GetDefault<UInput>();
 
-		EnhancedInput->BindAction(InputCDO->PawnRotation,
-								  ETriggerEvent::Triggered,
-								  this,
-								  &AAutoFocusPawn::CameraRotationKey);
+		EnhancedInput->BindAction(InputCDO->PawnRotation, ETriggerEvent::Triggered, this, &AAutoFocusPawn::CameraRotationKey);
 	}
 }
 
